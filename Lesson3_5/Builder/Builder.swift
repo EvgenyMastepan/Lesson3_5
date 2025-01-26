@@ -13,4 +13,10 @@ class Builder {
         vc.presenter = presenter
         return vc
     }
+    static func createAutorizationView() -> UIViewController{
+        let vc = AutorizationView()
+        let presenter = AutorizationPresenter(view: vc)
+        vc.presenter = presenter
+        return vc
+    }
 }
